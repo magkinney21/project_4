@@ -1,2 +1,8 @@
 
-<%# @favorites.each do |favorites| %>
+<% @favorite_posts.each do |favorites_post| %>
+<%= favorites_post.title %>
+<br>
+<%= time_ago_in_words(favorites_post.created_at) %> ago
+<br>
+<% end %>
+
