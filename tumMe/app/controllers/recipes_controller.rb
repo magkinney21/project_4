@@ -1,5 +1,6 @@
 class RecipesController < ApplicationController
   def index
-  @recipes = Recipe.get_recipes('')
+    query = params[:query]
+    @recipes = Recipe.get_recipes(query)
   end
 end
