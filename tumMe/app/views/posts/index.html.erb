@@ -1,6 +1,8 @@
 
+
 <h1>Support And Advice</h1>
 <br>
+
 <% @posts.each do |post| %>
 <div class="col-md-4">
     <div class="post">
@@ -15,3 +17,8 @@
 </div>
 <% end %>
 <i class="icon ion-heart"></i>.
+    <%#= link_to 'Remove from favorites', post_favorite_posts_path(post.id, @post), method: :delete %>
+  </div>
+</div>
+<%#= link_to "New Post", new_post_path %>
+
