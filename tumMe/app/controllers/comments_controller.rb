@@ -24,6 +24,8 @@ before_action :find_comment, only: [:edit, :update, :destroy]
     end
   end
   def destroy
+    @comment.destroy
+    redirect_to post_path(@post)
   end
 private
 def comment_params
