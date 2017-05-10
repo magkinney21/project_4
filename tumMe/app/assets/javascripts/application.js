@@ -14,4 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require turbolinks
+//= require turbolinks
+//= require sweetalert
+//= require sweet-alert-confirm
 //= require_tree .
