@@ -5,5 +5,7 @@ Rails.application.routes.draw do
     resources :favorite_posts, only: [:index, :create, :destroy]
   end
   root to: "posts#index"
-end
+
 # change root later
+get '/recipes' => 'recipes#index'
+end
