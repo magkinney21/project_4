@@ -1,0 +1,17 @@
+<%= form_tag('/recipes', method: :get) do |f| %>
+  <%= text_field_tag 'query' %>
+  <%= submit_tag 'Search' %>
+<% end %>
+<br>
+
+<% @recipes.each do |recipe| %>
+  <ul>
+    <img src= "<%= recipe['recipe']['image'] %>"/>
+    <li><%= recipe['recipe']['label'] %></li>
+    <li><%= recipe['recipe']['dietLabels'] %></li>
+    <li><%= recipe['recipe']['healthLabels'] %></li>
+    <% recipe['recipe']['ingredients'].each do |ingredient| %>
+      <li><%= "#{ingredient['text']}" %></li>
+    <% end %>
+  </ul>
+<% end %>

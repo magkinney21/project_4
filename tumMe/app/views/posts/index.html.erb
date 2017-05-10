@@ -1,4 +1,17 @@
-
+    <div class="search">
+          <script>
+        (function() {
+          var cx = '001473435792807546317:kdvc37rz0vy';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+  </script>
+      <gcse:search></gcse:search>
+</div>
 
 <h1>Support And Advice</h1>
 <br>
@@ -10,13 +23,13 @@
 <%= link_to "View Post", post_path(post), class: "btn-custom "%>
 <br>
 <br>
-    <%= link_to 'Add to favorites', post_favorite_posts_path(post.id, @post), method: :post %> ||
+   <i class="icon ion-heart"><%= link_to 'Add to favorites', post_favorite_posts_path(post.id, @post), method: :post  %></i>
     <%= link_to 'Remove from favorites', post_favorite_posts_path(post.id, @post), method: :delete %>
 
   </div>
 </div>
 <% end %>
-<i class="icon ion-heart"></i>.
+<i class="icon ion-heart"></i>
     <%#= link_to 'Remove from favorites', post_favorite_posts_path(post.id, @post), method: :delete %>
   </div>
 </div>
