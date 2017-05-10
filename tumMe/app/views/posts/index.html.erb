@@ -1,18 +1,17 @@
-
 <h1>this is the index view</h1>
+
 <% @posts.each do |post| %>
 <div class="col-md-4">
     <div class="post">
         <h2 class="post-title"><%= post.title %></h2>
 <%= link_to "View Post", post_path(post), class: "btn-custom "%>
 <br>
+<br>
     <%= link_to 'Add to favorites', post_favorite_posts_path(post.id, @post), method: :post %>
-<% end %>
+
 
     <%#= link_to 'Remove from favorites', post_favorite_posts_path(post.id, @post), method: :delete %>
-  <% end %>
   </div>
 </div>
-<br>
-<%= link_to "New Post", new_post_path %>
-
+<%#= link_to "New Post", new_post_path %>
+<% end %>
