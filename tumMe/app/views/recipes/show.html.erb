@@ -1,0 +1,14 @@
+
+<div class="container">
+<div class="card hovercard">
+   <img src= "<%= recipe['recipe']['image'] %>" alt=""/>
+   <div class="info">
+      <div class="title">
+      <%= recipe['recipe']['label'] %>
+      </div>
+      <div class="desc"><%= recipe['recipe']['dietLabels'] %></div>
+      <div class="desc"><%= recipe['recipe']['healthLabels'] %></div>
+         <% recipe['recipe']['ingredients'].each do |ingredient| %>
+      <div class="desc"><%= "#{ingredient['text']}" %></div>
+       <% end %>
+   </div>

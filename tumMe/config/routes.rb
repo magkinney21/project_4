@@ -4,10 +4,11 @@ Rails.application.routes.draw do
  resources :recipes do
     put :favorite, on: :member
   end
-resources :users, only: [:show]
+resources :users, only: [:show] do
+  resources :favorite_posts, only: [:index, :create, :destroy]
+end
 resources :posts do
     resources :comments
-    resources :favorite_posts, only: [:index, :create, :destroy]
   end
   root to: "posts#index"
 end

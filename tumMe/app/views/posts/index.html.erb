@@ -23,21 +23,16 @@
       <%= link_to "View Post", post_path(post), class: "btn-custom "%>
       <br>
       <br>
-      <% if post.favorited(current_user) %>
-      <%= link_to '<i class="ion-ios-heart-outline"></i>'.html_safe, post_favorite_post_path(post.id, current_user.id), method: :delete %>
-<% else %>
-      <%= link_to '<i class="icon ion-ios-heart"></i>'.html_safe, post_favorite_posts_path(post.id, @post), method: :post  %>
-
-<% end %>
-      <%#= link_to '<i class="icon ion-ios-heart"></i>'.html_safe, post_favorite_posts_path(post.id, @post), method: :post  %>
-
-      <%#= link_to '<i class="ion-ios-heart-outline"></i>'.html_safe, post_favorite_post_path(post.id, current_user.id), method: :delete %>
-    </div>
+      <%# favorited_post = post.favorited(current_user)%>
+      <%# if favorited_post.present? %>
+      <%#= link_to '<i class="ion-ios-heart-outline"></i>'.html_safe, user_favorite_post_path(user_id: current_user.id, id: favorited_post.id), method: :delete %>
+    <%# else %>
+      <%#= link_to '<i class="icon ion-ios-heart"></i>'.html_safe, user_favorite_posts_path(user_id: current_user.id, id: favorited_post, post_id: id ), method: :post  %>
+   <%# end %>
+     </div>
   </div>
-   <% end %>
+  <% end %>
 </div>
 </div>
 
-<!-- <p id="favorite"><i class="ion-ios-heart-outline"></i></p>
-<div id="display_advance">
-</div> -->
+
