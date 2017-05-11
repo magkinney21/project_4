@@ -1,3 +1,5 @@
+<h1>Recipes</h1>
+<p> Search by recipe,ingreditent, food allergies, etc... </p>
 <%= form_tag('/recipes', method: :get) do |f| %>
   <%= text_field_tag 'query' %>
   <%= button_tag(type: "submit", class: "btn btn-default") do %>
@@ -6,7 +8,7 @@
 <% end %>
 <br>
 
-
+<div class="pre-scrollable">
 <% @recipes.each do |recipe| %>
 <div class="container">
 <div class="card hovercard">
@@ -27,4 +29,4 @@
 </div>
 </div>
 <% end %>
-
+</div>
