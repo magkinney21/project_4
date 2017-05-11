@@ -23,4 +23,8 @@ class FavoritePostsController < ApplicationController
   def set_post
     @post = Post.find(params[:post_id] || params[:id])
   end
+  def set_favorite
+     @favorite = Favorite.find(params[:favorited_id] || params[:id])
+
+  end
 end
