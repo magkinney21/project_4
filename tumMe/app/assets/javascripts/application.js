@@ -18,3 +18,9 @@
 //= require sweetalert
 //= require sweet-alert-confirm
 //= require_tree .
+
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
