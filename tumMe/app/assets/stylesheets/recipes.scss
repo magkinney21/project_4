@@ -1,37 +1,54 @@
 // Place all the styles related to the Recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.card {
-  padding-top: 20px;
-  margin: 10px 0 20px 0;
-  background-color: #ffffff;
-  border: 1px solid #d8d8d8;
-  border-top-width: 0;
-  border-bottom-width: 2px;
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
-  -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+.recipe{
+  text-align: left;
 }
 
 
+.container .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+      padding-top: 20px;
+      margin: 10px 0 20px 0;
+      background-color: #ffffff;
+      border: 1px solid #d8d8d8;
+      border-top-width: 0;
+      border-bottom-width: 2px;
+      -webkit-border-radius: 3px;
+         -moz-border-radius: 3px;
+              border-radius: 3px;
+      -webkit-box-shadow: none;
+         -moz-box-shadow: none;
+              box-shadow: none;
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+
+}
+.row row-flex row-flex-wrap{
+  display:flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              align-items: center;
+}
+/**/
 .card.hovercard {
   position: relative;
   width: 300px;
+  height: auto;
   padding-top: 0;
-  overflow: hidden;
+  overflow: auto;
   text-align: center;
   background-color: #fff;
+  display: inline-block;
 }
 
 .card.hovercard img {
-  width: 300px;
-  height: 200px;
+  width: auto;
+  height: auto;
 }
 
 .card.hovercard .avatar {
@@ -63,7 +80,7 @@
 }
 
 .card.hovercard .info .desc {
-  overflow: hidden;
+  overflow: auto;
   font-size: 12px;
   line-height: 20px;
   color: #737373;
@@ -88,3 +105,7 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+
+
+
