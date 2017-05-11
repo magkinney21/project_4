@@ -7,6 +7,7 @@ before_action :authenticate_user!, except: [:index, :show]
     end
 
    def show
+
    end
 
     def new
@@ -20,10 +21,9 @@ before_action :authenticate_user!, except: [:index, :show]
     else
       render 'new'
     end
-  end
+end
 
   def edit
-
   end
 
   def update
@@ -31,6 +31,7 @@ before_action :authenticate_user!, except: [:index, :show]
       redirect_to post_path
   end
 end
+
   def destroy
     @post.destroy
     redirect_to posts_path
@@ -44,4 +45,4 @@ end
    def find_post
      @post = Post.find(params[:id])
    end
-end
+  end

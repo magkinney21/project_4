@@ -24,9 +24,14 @@
        <% end %>
    </div>
    <div class="bottom">
-      <a class="icon ion-ios-heart"></a>
+   <% if current_user %>
+  <%= link_to '<i class="icon ion-ios-heart"></i>'.html_safe,   favorite_recipe_path(:id, type: "favorite"), method: :put %>
+  <%= link_to '<i class="icon ion-ios-heart-outline"></i>'.html_safe, favorite_recipe_path(:id, type: "unfavorite"), method: :put %>
+<% end %>
+    <!--   <a class="icon ion-ios-heart"></a> -->
    </div>
 </div>
 </div>
 <% end %>
 </div>
+

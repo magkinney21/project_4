@@ -1,4 +1,8 @@
 class Recipe < ApplicationRecord
+  belongs_to :user
+  has_many :favorite_recipes
+  has_many :favorited_by, through: :favorite_recipes, source: :user
+
   def self.get_recipes(query = '<required>')
     url = "https://edamam-recipe-search-and-diet-v1.p.mashape.com/search?_app_id=e12ebee8&_app_key=892f59476a7b1bd0bf032783cd434738&q=#{query}"
     response = HTTParty.get(url,

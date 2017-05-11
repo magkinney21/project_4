@@ -24,3 +24,14 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
 });
 
+// $('#favorite').click(function(){
+//   $('#display_advance').toggle('1000');
+//   icon = $(this).find("i");
+//   icon.toggleClass("icon ion-ios-heart icon ion-ios-heart-outline")
+// })
+
+//  $(function () {
+//     $(".glyphicon").unbind('click');
+//     $(".glyphicon").click(function (e) {
+//         $(this).toggleClass("glyphicon glyphicon-heart glyphicon-chevron-down");
+// });

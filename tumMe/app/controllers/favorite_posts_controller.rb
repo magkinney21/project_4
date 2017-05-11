@@ -14,6 +14,7 @@ class FavoritePostsController < ApplicationController
     end
   end
 
+  end
   def destroy
     Favorite.where(favorited_id: @post.id, user_id: current_user.id).first.destroy
     redirect_to @post, notice: 'Post is no longer in favorites'
@@ -26,6 +27,5 @@ class FavoritePostsController < ApplicationController
   end
   def set_favorite
      @favorite = Favorite.find(params[:favorited_id] || params[:id])
-
   end
-end
+
