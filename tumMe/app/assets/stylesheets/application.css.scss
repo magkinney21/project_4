@@ -21,7 +21,7 @@
 
 
 body {
-  background-color:  rgba(220, 216, 105, 0.41);
+  background-color: #D1E6E7;
   font-family: 'Playfair Display', serif;
 }
 
@@ -56,7 +56,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar {
   font-family: 'Muli', sans-serif;
-  text-transform: uppercase;
 }
 
 .navbar-default {
@@ -89,13 +88,15 @@ h1, h2, h3, h4, h5, h6 {
     color: #0a8fd5;
   }
 }
-
+.favlink{
+  color: white;
+}
 
 /* Message styles */
 
 .post {
   box-sizing: border-box;
-  background-color: rgb(168, 192, 171);
+  background-color: #5B7778;
   margin-bottom: 25px;
   margin-right: 10px;
   margin-left: 10px;
