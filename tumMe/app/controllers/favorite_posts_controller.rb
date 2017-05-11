@@ -5,11 +5,12 @@ class FavoritePostsController < ApplicationController
   def index
    @favorite_posts = current_user.favorite_posts
   end
+
   def create
     if Favorite.create(favorited: @post, user: current_user)
       redirect_to @post, notice: 'Post has been favorited'
     else
-      redirect_to @post, alert: 'Something went wrong...*sad panda*'
+      redirect_to @post, alert: 'Something went wrong'
     end
   end
 
