@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
   padding: 10px 20px;
   &:hover {
-    color: #383838;
+    color: #0a8fd5;
     transition: 0.5s;
     background-color: #fff;
     text-decoration: none;
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn:hover {
   transition: 0.5s;
-  color: #383838;
+  color: #0a8fd5;
   background-color: #fff;
 }
 
@@ -66,15 +66,15 @@ h1, h2, h3, h4, h5, h6 {
 
 
   .navbar-nav > li > a {
-    color: #9CFF00;
+    color: #fff;
   }
 
   .navbar-link {
-    color: #9CFF00;
+    color: #fff;
   }
 
   .navbar-brand {
-    color: #9CFF00;
+    color: #fff;
     letter-spacing: 1.1px;
   }
 
