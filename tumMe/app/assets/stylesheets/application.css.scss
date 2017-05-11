@@ -15,8 +15,10 @@
  *= require_tree .
  */
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display|Muli:300,400);
+@import 'ionicons';
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
 
 body {
   background-color: #D1E6E7;
