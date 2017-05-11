@@ -23,14 +23,13 @@
 <%= link_to "View Post", post_path(post), class: "btn-custom "%>
 <br>
 <br>
-
-    <%= link_to 'Add to favorites', post_favorite_posts_path(post.id, @post), method: :post, :class => "favlink" %>
-
-
-   <i class="icon ion-heart"><%= link_to 'Add to favorites', post_favorite_posts_path(post.id, @post), method: :post  %></i>
-    <%= link_to 'Remove from favorites', post_favorite_posts_path(post.id, @post), method: :delete %>
-
-
+<% if favorite = current_user.favorite_posts(@post) %>
+<%= link_to '<i class="icon ion-ios-heart"></i>'.html_safe, post_favorite_posts_path(post.id, @post), method: :post  %>
+<% elsif %>
+<% if favorite = current_user.favorite_posts(@post) %>
+ <%= link_to '<i class="ion-ios-heart-outline"></i>'.html_safe, post_favorite_post_path(post.id, current_user.id), method: :delete %>
+ <% end %>
+ <% end %>
   </div>
 </div>
 <% end %>
