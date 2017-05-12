@@ -1,5 +1,5 @@
 <div class="comment">
- <img class="img-responsive img-rounded hidden-xs" src="<%= comment.user.img_url %>" alt="" style = "width: 50px; height: 50px">
+ <img class="img-responsive img-circle hidden-xs" src="<%= comment.user.img_url %>" alt="" style = "width: 50px; height: 50px">
 <p class="comment-content"><%= comment.content %></p>
 <i class="comment-posted-by">Posted by :  <%= comment.user.email.capitalize %> <%= time_ago_in_words(comment.created_at) %> ago </i>
 

@@ -28,6 +28,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Muli', sans-serif;
   font-weight: 300;
+  color:#fff;
 }
 
 .btn-custom {
@@ -180,6 +181,21 @@ h1, h2, h3, h4, h5, h6 {
       margin-right: 15px;
     }
   }
+}
+/*footer style*/
+.logo {
+  height: 100px;
+  width: 100px;
+  margin-left: 35px;
+}
+#logo {
+  letter-spacing: 11px;
+  text-align: center;
+  margin-right: 10px;
+  color: #0a8fd5;
+}
+#copy{
+  font-size: 10px;
 }
 .footer-bs {
     background-color: #1C263C;
