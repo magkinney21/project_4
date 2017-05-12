@@ -25,7 +25,7 @@ Post.create(id: 8, title: "SIBO anyone?", content: "Hi all. I have been diagnose
 Post.create(id: 9, title: "When does it stop?", content: "Hi everyone, I have cyclic vomiting syndrome. I've had it now for 2 plus years and am having a hard time dealing with it. It is so difficult to deal with right now, my life is on hold. Does it every get better?", created_at:"2017-03-16 15:45:51", user_id: 4)
 Post.create(id: 10, title: "Any advice helps", content: "I am interested in hearing others stories of recovery. How long did it take to feel 'normal' again and were there set backs along the way. My husband is recovering from his first and I hope only bout with diverticulitis. He was hospitalized for a couple days and then sent home with cipro and flagyl. The flagyl was a problem for him and he seems to two weeks after being done with it, shaking the side effects. He still tires easily. He worked all week and then worked at home all day yeserday, and today is on the couch. Not really sick, just worn out. Are these things others have experienced? He has just never been one to lay around so it drives me crazy! Anyhow, how long does it take to completely shake this?", created_at:"2017-02-10 15:45:51", user_id: 5)
 Post.create(id:11, title: "New Here", content: "Hey fellow TumMees, just got the news that I have been diagnosed with GERD.  I'm not too sure what to do or where to look next for information on limiting my symptoms, please any help would be much appreciated.", created_at:"2017-05-11 12:45:51", user_id: 13)
-Post.create(id:12, title: "No more raw veggies", content: "I recently found out that my mom was diagnosed with gastroparesis and she is a huge raw veggie and dip fan. Are there any raw veggies that anyone else with gastroparesis can consume or is she going to have to start steaming them all.", created_at:"2017-05-09 10:40:51", user_id: 14)
+Post.create(id:12, title: "No more raw veggies", content: "I recently found out that my mom was diagnosed with gastroparesis also and she is a huge raw veggie and dip fan. Are there any raw veggies that anyone else with gastroparesis can consume or is she going to have to start steaming them all.", created_at:"2017-05-09 10:40:51", user_id: 14)
 #seeded comments
 Comment.delete_all
 Comment.create(id: 1, content: "My doctor put me on a high fiber diet after I was diagnosed.  I am not sure how well it will work for you but it is worth asking your doctor if it is an option.", post_id: 1, user_id: 14, created_at: "2017-03-13 14:26:42")
@@ -41,89 +41,104 @@ User.create(id: 1,
             email: 'johnp@sample.com',
             password: 'password',
             password_confirmation: 'password',
-            img_url: "https://randomuser.me/api/portraits/men/83.jpg"
+            img_url: "https://randomuser.me/api/portraits/men/83.jpg",
+            disease:"Crohn's"
             )
 User.create(id: 2,
             email: 'steve23@aol.com',
             password: 'password',
             password_confirmation: 'password',
-            img_url: "https://randomuser.me/api/portraits/men/19.jpg"
+            img_url: "https://randomuser.me/api/portraits/men/19.jpg",
+            disease:"Colitis"
             )
 User.create(id: 3,
             email: 'jake83@yahoo.com',
             password: 'password',
             password_confirmation: 'password',
-            img_url: "https://randomuser.me/api/portraits/men/82.jpg"
+            img_url: "https://randomuser.me/api/portraits/men/82.jpg",
+            disease:"Crohn's"
             )
 User.create(id: 4,
             email: 'warreng@hotmail.com',
             password: 'password',
             password_confirmation: 'password',
-            img_url: "https://randomuser.me/api/portraits/men/67.jpg"
+            img_url: "https://randomuser.me/api/portraits/men/67.jpg",
+            disease:'Cyclical Vomiting Syndrome'
             )
 User.create(id: 5,
             email: 'sueZQ@yahoo.com',
             password: 'password',
             password_confirmation: 'password',
-            img_url: "https://randomuser.me/api/portraits/women/15.jpg"
+            img_url: "https://randomuser.me/api/portraits/women/15.jpg",
+            disease:"Diverticulitis"
             )
 User.create(id: 6,
             email: 'stephNE@aol.com',
             password: 'password',
             password_confirmation: 'password',
-            img_url: "https://randomuser.me/api/portraits/women/3.jpg"
+            img_url: "https://randomuser.me/api/portraits/women/3.jpg",
+            disease:"Gastroparesis"
             )
 User.create(id: 7,
             email: 'britknee@gmail.com',
             password: 'password',
             password_confirmation: 'password',
-            img_url: "https://randomuser.me/api/portraits/women/90.jpg"
+            img_url: "https://randomuser.me/api/portraits/women/90.jpg",
+            disease:"Gastroparesis"
             )
 User.create(id: 8,
             email: 'loriann25@hotmail.com',
             password: 'password',
             password_confirmation: 'password',
-            img_url: "https://randomuser.me/api/portraits/women/61.jpg"
+            img_url: "https://randomuser.me/api/portraits/women/61.jpg",
+            disease:"IBS"
             )
 User.create(id: 9,
             email: 'denise9110@aol.com',
             password: 'password',
             password_confirmation: 'password',
-            img_url: "https://randomuser.me/api/portraits/women/36.jpg"
+            img_url: "https://randomuser.me/api/portraits/women/36.jpg",
+            disease:"IBS"
             )
 User.create(id: 10,
             email: 'sherylann@yahoo.com',
             password: 'password',
             password_confirmation: 'password',
-            img_url: "https://randomuser.me/api/portraits/women/0.jpg"
+            img_url: "https://randomuser.me/api/portraits/women/0.jpg",
+            disease:"SIBO"
             )
 User.create(id: 11,
             email: 'itsme@yahoo.com',
             password: 'password',
             password_confirmation: 'password',
-            img_url: "https://randomuser.me/api/portraits/women/83.jpg"
+            img_url: "https://randomuser.me/api/portraits/women/83.jpg",
+            disease:"Gastroparesis"
             )
 User.create(id: 12,
             email: 'guesswho@yahoo.com',
             password: 'password',
             password_confirmation: 'password',
-            img_url: "https://randomuser.me/api/portraits/men/61.jpg"
+            img_url: "https://randomuser.me/api/portraits/men/61.jpg",
+            disease:"IBS"
             )
 User.create(id: 13,
             email: 'healme@yahoo.com',
             password: 'password',
             password_confirmation: 'password',
-            img_url: "https://randomuser.me/api/portraits/men/34.jpg"
+            img_url: "https://randomuser.me/api/portraits/men/34.jpg",
+            disease:"GERD"
             )
 User.create(id: 14,
             email: 'getbetter@yahoo.com',
             password: 'password',
             password_confirmation: 'password',
-            img_url: "https://randomuser.me/api/portraits/men/50.jpg"
+            img_url: "https://randomuser.me/api/portraits/men/50.jpg",
+            disease:"Gastroparesis"
             )
 User.create(id: 15,
             email: 'keepPushing@yahoo.com',
             password: 'password',
             password_confirmation: 'password',
-            img_url: "https://randomuser.me/api/portraits/women/31.jpg"
+            img_url: "https://randomuser.me/api/portraits/women/31.jpg",
+            disease:"Diverticulitis"
             )
