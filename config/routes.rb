@@ -10,7 +10,7 @@
  resources :recipes do
     put :favorite, on: :member
   end
-resources :users, only: [:show] do
+resources :users, only: [:show, :index] do
   resources :favorite_posts, only: [:index, :create, :destroy]
 end
 resources :posts do

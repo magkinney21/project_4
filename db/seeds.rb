@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-ActiveRecord::Base.connection.reset_pk_sequence!('posts')
-ActiveRecord::Base.connection.reset_pk_sequence!('comments')
-ActiveRecord::Base.connection.reset_pk_sequence!('users')
+# ActiveRecord::Base.connection.reset_pk_sequence!('posts')
+# ActiveRecord::Base.connection.reset_pk_sequence!('comments')
+# ActiveRecord::Base.connection.reset_pk_sequence!('users')
 
 
 

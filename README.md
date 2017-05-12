@@ -7,7 +7,7 @@ TumMe
 You are not alone. Seek Support. Give Advice. Eat Healthy.
 
 ## Deployed Link
-* [Heroku Link](#)
+* [Heroku Link](https://guarded-falls-42717.herokuapp.com/)
 
 
 ## App Overview
