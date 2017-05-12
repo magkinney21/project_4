@@ -41,7 +41,7 @@ You are not alone. Seek Support. Give Advice. Eat Healthy.
   * [Powerpoint](#)
 
 
-##Contributors
+## Contributors
 
 * [Julian Ireland-Chandler](https://github.com/jcireland14)
 * [Magdalena Kinney](https://github.com/magkinney21)
