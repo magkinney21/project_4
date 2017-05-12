@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
+//= require bootsy
 //= require turbolinks
 //= require turbolinks
 //= require sweetalert

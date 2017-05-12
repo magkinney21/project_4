@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  include Bootsy::Container
   has_many :recipes
   has_many :posts
   has_many :comments

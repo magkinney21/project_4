@@ -23,6 +23,7 @@
         <li><%= link_to "Sign Out", destroy_user_session_path, method: "delete" %></li>
         <li><%= link_to "Recipes", recipes_path %></li>
         <li><%= link_to "Profile", user_path(current_user.id) %>
+        <li><%= link_to "About", about_path %></li>
       <% else %>
       <li><%= link_to "Log-In", new_user_session_path %></li>
       <% end %>
@@ -45,14 +46,14 @@
           <div class="col-md-3 footer-brand animated fadeInLeft">
               <h2><img src="<%= asset_path('logo.png')%>" class="logo"></h2>
                 <h3 id ="logo">TumMe</h3>
-                <p id="copy">© 2017 MK & JIC INC, All rights reserved</p>
+                <p id="copy">© 2017 MK & JIC INC, All rights reserved></p>
             </div>
           <div class="col-md-4 footer-nav animated fadeInUp">
               <h4>Helpful Links —</h4>
               <div class="col-md-6">
                     <ul class="pages">
                         <li><a href="https://www.healthgrades.com/">Find Doctors</a></li>
-                        <li><a href="#">Dining Out</a></li>
+                        <li><a href="https://radiant-beyond-88759.herokuapp.com/">Dining Out</a></li>
                         <li><a href="https://penzu.com/food-diary">Food Journal</a></li>
                         <li><a href="http://allergyfreemenuplanners.com/">Meal Prep</a></li>
                         <li><a href="http://staywell.com/">Stay Well</a></li>
@@ -61,9 +62,9 @@
               <div class="col-md-6">
                     <ul class="list">
                         <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Terms & Condition</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                          <li><a href="#">Contacts</a></li>
+                          <li><a href="#">Terms & Condition</a></li>
+                          <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
@@ -73,12 +74,12 @@
                   <li><a href="#">Facebook</a></li>
                   <li><a href="#">Twitter</a></li>
                   <li><a href="#">Instagram</a></li>
-                  <li><a href="#">RSS</a></li>
+                  <li><a href="#">GitHub</a></li>
                 </ul>
             </div>
           <div class="col-md-3 footer-ns animated fadeInRight">
               <h4>Newsletter</h4>
-                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                <p>Subscribe with email to get monthly updates</p>
                 <p>
                     <div class="input-group">
                       <input type="text" class="form-control" placeholder="Search for...">
