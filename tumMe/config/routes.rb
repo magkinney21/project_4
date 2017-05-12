@@ -1,4 +1,10 @@
-Rails.application.routes.draw do
+
+  Rails.application.routes.draw do
+  mount Bootsy::Engine => '/bootsy', as: 'bootsy'
+
+
+
+
   devise_for :users
 
  resources :recipes do
@@ -14,6 +20,7 @@ resources :posts do
 
  get 'about' => 'static_pages#about'
  end
+
 # change root later
 # get '/recipes' => 'recipes#index'
 # end
