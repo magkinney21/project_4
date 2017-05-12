@@ -49,7 +49,7 @@ User.create(id: 2,
             password: 'password',
             password_confirmation: 'password',
             img_url: "https://randomuser.me/api/portraits/men/19.jpg",
-            disease:"Colitis"
+            disease:"Crohn's"
             )
 User.create(id: 3,
             email: 'jake83@yahoo.com',
