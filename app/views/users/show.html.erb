@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row profile">
+    <div class="col-md-3">
+      <div class="profile-sidebar">
+        <!-- SIDEBAR USERPIC -->
+        <div class="profile-userpic">
+          <img src="<%= current_user.img_url %>" class="img-responsive" alt="">
+        </div>
+        <!-- END SIDEBAR USERPIC -->
+        <!-- SIDEBAR USER TITLE -->
+        <div class="profile-usertitle">
+          <div class="profile-usertitle-name">
+            <%= current_user.email%>
+          </div>
+          <div class="profile-usertitle-job">
+            <% link_to "Disease", %>
+          </div>
+        </div>
+        <!-- END SIDEBAR USER TITLE -->
+        <!-- SIDEBAR BUTTONS -->
+    <!--     <div class="profile-userbuttons">
+          <button type="button" class="btn btn-success btn-sm">Recipes<i class="glyphicon glyphicon-heart"></i></button>
+          <button type="button" class="btn btn-danger btn-sm">Message</button>
+        </div> -->
+        <!-- END SIDEBAR BUTTONS -->
+        <!-- SIDEBAR MENU -->
+        <div class="profile-usermenu">
+          <ul class="nav">
+            <li class="active">
+            <%= link_to '<i class="glyphicon glyphicon-list"></i> Support/Advice'.html_safe , posts_path(@post) %>
+            </li>
+            <li>
+            <%= link_to '<i class="glyphicon glyphicon-user"></i> Account Settings '.html_safe, edit_user_registration_path(@user) %>
+            </li>
+            <li>
+            <%= link_to '<i class="glyphicon glyphicon-cutlery"></i> Recipes '.html_safe, recipe_path %>
+            </li>
+            <li>
+            <%#= link_to '<i class="glyphicon glyphicon-heart"></i> Favorite Post '.html_safe, user_favorite_posts_path(current_user) %>
+            </li>
+          </ul>
+        </div>
+        <!-- END MENU -->
+      </div>
+    </div>
+    <div class="col-md-9">
+            <div class="profile-content">
+         <% @posts.each do |post| %>
+         <p data-toggle="tooltip" data-placement="left" title="click to see comments"><%= link_to post.title, post_path(post.id, @post) %></p>
+         <i><%= post.content %></i>
+         <% end %>
+            </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+

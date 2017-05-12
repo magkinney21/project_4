@@ -1,0 +1,10 @@
+<h1><%= current_user.email.capitalize %> -Favorited Post</h1>
+
+<br>
+<% @favorite_posts.each do |favorites_post| %>
+<%= link_to favorites_post.title, post_path(favorites_post.id, @post) %>
+<br>
+<%= time_ago_in_words(favorites_post.created_at) %> ago
+<br>
+<% end %>
+
