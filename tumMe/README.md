@@ -27,7 +27,7 @@ You are not alone. Seek Support. Give Advice. Eat Healthy.
 
 ## Entity Relationship Diagrams (Database Modeling)
 
-![ERD](http://i.imgur.com/8GalQ55.png)
+![ERD](http://i.imgur.com/Jo3X2qK.png)
 
 
 
