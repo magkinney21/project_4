@@ -11,7 +11,9 @@ resources :posts do
     resources :comments
   end
   root to: "posts#index"
-end
+
+ get 'about' => 'static_pages#about'
+ end
 # change root later
 # get '/recipes' => 'recipes#index'
 # end
