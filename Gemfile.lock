@@ -214,7 +214,7 @@ DEPENDENCIES
   simple_form (~> 3.4)
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3
+  sqlite3 (= 1.3.13)
   sweet-alert
   sweet-alert-confirm
   sweetalert-rails
