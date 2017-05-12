@@ -1,24 +1,47 @@
-# README
+# TumMe
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Application Name: TumMe
 
-Things you may want to cover:
+TumMe
 
-* Ruby version
+You are not alone. Seek Support. Give Advice. Eat Healthy.
 
-* System dependencies
+## Deployed Link
+* [Heroku Link](#)
 
-* Configuration
 
-* Database creation
+## App Overview
 
-* Database initialization
+  TumMe is an online forum for people with digestive diseases to post about their disease and seek support and advice to help ease the burden of having a digestive disease.  Users can also search recipes that fit their diseases restrictions.
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+## Stretch Goals/ Future Features
+
+* Allow users to view other users by disease
+* Allow users to favorite posts from other users and view all of their favorites
+* Allow users to favorite recipes and be able to view all favorited recipes
+
+
+
+## Entity Relationship Diagrams (Database Modeling)
+
+![ERD](http://i.imgur.com/8GalQ55.png)
+
+
+
+## Technologies Used
+
+  * Languages - HTML5, CSS3, Sass, Ruby on Rails, Jquery, Javascript, CoffeeScript
+  * Design -  Google Fonts, Bootstrap, Sweetalerts,
+  * Authentication - Devise
+  * [Wireframes](https://wireframe.cc/j3UDwu)
+  * [Trello](https://trello.com/b/sCWNSYVw/tum-me)
+  * [Powerpoint](#)
+
+
+##Contributors
+
+* [Julian Ireland-Chandler](https://github.com/jcireland14)
+* [Magdalena Kinney] (https://github.com/magkinney21)
