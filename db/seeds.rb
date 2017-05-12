@@ -13,7 +13,7 @@
 
 
 #seeded posts
-Post.delete_all
+
 Post.create(id: 1, title: "Crohn's Diet Suggestion?", content: "I have recently been diagnosed with crohn's and would love to know if anyone has suggestions on a diet to follow to help limit flare up?", created_at:"2017-03-10 12:45:51", user_id: 1)
 Post.create(id: 2, title: "Modulen Diet?", content: "Hi, I have had Crohns since 2010. After 2 operations, countless spells on steroids and azathioprine, trials on infliximab and adalimumab - all of which haven't worked, my specialist has recommended I try Modulen. For those who don't know this is where you don't eat any food and have Modulen (a special kind of drink). You then reintroduce food slowly after 4-8 weeks. Everywhere I have researched seems to suggest it has at least a 90% remission success rate but the problem is patients are unable to stick to the strict regime. I am determined to give it a good go!Has anyone any experience of this - any views and comments will be gratefully received! Thanks", created_at:"2017-04-19 16:23:51", user_id: 3)
 Post.create(id: 3, title: "Any Gastroparesis Advice?", content: "I have Gastroparesis hi my fellow suffers.  I was dignosed with this condition in 2008  my stomach empty's at 5% right now. I have a lot of pain with this condition  can any one else tell me if they experience a lot of pain too . My doctor has told me pain meds are very bad to take with gastroparesis so i am doomed to suffer unless some one can offer insight out there please reple if you have sugestions for me. Thanks", created_at:"2017-05-01 10:45:15", user_id: 6)
@@ -27,7 +27,7 @@ Post.create(id: 10, title: "Any advice helps", content: "I am interested in hear
 Post.create(id:11, title: "New Here", content: "Hey fellow TumMees, just got the news that I have been diagnosed with GERD.  I'm not too sure what to do or where to look next for information on limiting my symptoms, please any help would be much appreciated.", created_at:"2017-05-11 12:45:51", user_id: 13)
 Post.create(id:12, title: "No more raw veggies", content: "I recently found out that my mom was diagnosed with gastroparesis also and she is a huge raw veggie and dip fan. Are there any raw veggies that anyone else with gastroparesis can consume or is she going to have to start steaming them all.", created_at:"2017-05-09 10:40:51", user_id: 14)
 #seeded comments
-Comment.delete_all
+
 Comment.create(id: 1, content: "My doctor put me on a high fiber diet after I was diagnosed.  I am not sure how well it will work for you but it is worth asking your doctor if it is an option.", post_id: 1, user_id: 14, created_at: "2017-03-13 14:26:42")
 Comment.create(id: 2, content: "I have had GP for about 5 years now and have realized that figuring out a healthy diet of easily digested foods is keep and to maintain that diet even if it gets boring.", post_id: 3, user_id: 11, created_at: "2017-05-05 10:04:42")
 Comment.create(id: 3, content: "How old is your husband? Is this his first attack and how did they diagnose him? If second attack what did they treat him with the first time? Does he exercise alot?", post_id: 10, user_id: 15, created_at: "2017-02-15 12:15:11")
@@ -36,7 +36,7 @@ Comment.create(id: 5, content: "Yeah i have wondered this and am convinced it do
 Comment.create(id: 6, content: "Welcome to the forum. Were you diagnosed with Ulcerative Colitis or just an infectious colitis? Guessing the later of the two given your prescription for antibiotics. Make sure you're staying well hydrated and eating properly or you might feel weak. Did they test your blood in the hospital for low blood iron levels (aka anemia)? If you're very weak then it may be necessary to get some fluids pumped back into you via IV", post_id: 6, user_id: 13, created_at:"2017-05-11 9:45:34")
 
 #seeded users
-User.delete_all
+
 User.create(id: 1,
             email: 'johnp@sample.com',
             password: 'password',
