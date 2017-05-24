@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-nav > li > a {
     color: white;
 
-
+}
   .navbar-link {
     color: white;
   }
@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     letter-spacing: 1.1px;
   }
-}
+
 
 /* Links styles */
 
@@ -183,10 +183,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 /*footer style*/
-.logo {
+.logo, .logoFooter {
   height: 100px;
   width: 100px;
-/*  margin-left: 35px;*/
+}
+.logoFooter{
+  margin-left: 35px;
 }
 #logo {
   letter-spacing: 11px;
