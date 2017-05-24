@@ -1,21 +1,26 @@
 <head>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 </head>
-<!-- class="jumbotron"-->
-<div class="jumbotron">
-<div class="container">
-  <h1 class="display-3">TumMe</h1>
-  <p>TumMe is an online forum for people with digestive diseases
-  to post about their disease and seek support and advice to help ease the
-   burden of having a digestive disease.  Users can also search recipes
-   that fit their diseases restrictions.</p>
-  <hr class="m-y-md">
-  <p class="lead">
-    <a class="btn btn-success btn-lg" href="http://www.bootstrap-tutorials.com" role="button">Visit Now</a>
-  </p>
-</div>
-</div>
 
+<section class="call-to-action">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-8 text-right m-text-center">
+                <h1>TumMe</h1>
+                  <p>TumMe is an online forum for people with digestive diseases
+   to post about their disease, and seek support and advice to help ease the
+   burden. As a member, you can also search recipes that fit your diseases restrictions.
+   We are not medical professionals, we have the insight that doctors do not. We know the reality, the daily struggles, the journey it takes
+   to get relief. We are here to let you know you are not alone. Lets get better together!  </p>
+            </div>
+             <div class="col-md-4 col-sm-4 m-text-center">
+             <h3 class="h3logo"><img src="<%= asset_path('logo.png')%>" class="logo"/></h3>
+    <button class="btn btn-default btn-lg" id="btn" role="button"><%= link_to "Join Us", new_user_registration_path %></button>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 <section id="carousel">
   <div class="container">
@@ -37,14 +42,14 @@
             <div class="item">
                         <div class="profile-circle" style="background-image:url('http://68.media.tumblr.com/b8e5b8a495a14a4fdc9d3a2451fa4ae0/tumblr_nxtkez0BgY1u4gv6co2_250.png'); background-size: contain; background-repeat: no-repeat;" ></div>
               <blockquote>
-                <p>I was dx'd with gastroparesis last August. It is steadily getting worse. I eat or drink the right foods and see no relief. I am losing weight. None of the medications help. Latel'y I am having trouble breathing when I am severy bloated and distended. My throat has a tickle that makes me cough. I also have Parkinsons and the gastroparesis is a complication of that. I'm looking for relief. Doctor doesn't have any answers. Ativan helps me.
+                <p>I was dx'd with gastroparesis last August. It is steadily getting worse. I eat or drink the right foods and see no relief. I am losing weight. None of the medications help. Lately, I am having trouble breathing when I am severly bloated and distended. My throat has a tickle that makes me cough. I also have Parkinsons and the gastroparesis is a complication of that. I'm looking for relief. Doctors don't have any answers. Ativan helps me.
                 </p>
               </blockquote>
             </div>
             <div class="item">
                         <div class="profile-circle" style="background-image:url('https://randomuser.me/api/portraits/women/62.jpg'); background-size: contain; background-repeat: no-repeat;"></div>
               <blockquote>
-                <p>I have had ulcerative colitis for about 20 years now. It is only fairly recently that I have made diet changes under the guidance of my Naturopath. He/she will work out exactly what changes you need to make, supplements needed, probiotics to take and what is most likely irritating your colon. I found the advice I received worth its weight in gold. I am so much improved, have much more energy and have put on weight - almost too much weight!
+                <p>I have had ulcerative colitis for about 20 years now. It is only recently that I have made diet changes under the guidance of my Naturopath. He/she will work out exactly what changes you need to make, supplements needed, probiotics to take and what is most likely irritating your colon. I found the advice I received worth its weight in gold. I am so much improved, have much more energy and have put on weight - almost too much weight!
 
 Everyone is so individual that you really need an expert to advise on these sorts of things. It is very worthwhile and you will find yourself steadily healing and gaining strength.</p>
               </blockquote>
@@ -52,7 +57,7 @@ Everyone is so individual that you really need an expert to advise on these sort
             <div class="active item">
                         <div class="profile-circle" style="background-image:url('http://womendeliver.org/wp-content/uploads/2017/03/Alaa-Murabit-speaker-web-1.jpg'); background-size: contain; background-repeat: no-repeat;"></div>
               <blockquote>
-                <p>My daughter has Crohns Colitis and we will adding starting Milk Kefir to her diet. This should help add good live bacteria to her gut and possibly bring her into remission. Have any of you tried kefir?
+                <p>My daughter has Crohns Colitis and we will start adding Milk Kefir to her diet. This should help add good live bacteria to her gut and possibly bring her into remission. Have any of you tried kefir?
 
 Currently she is taking Acidophillus (probiotic) tablets along with her Medications (Remicade, Asacol, Cortifoam, and she is symptom free.</p>
               </blockquote>
@@ -60,19 +65,19 @@ Currently she is taking Acidophillus (probiotic) tablets along with her Medicati
                     <div class="item">
                         <div class="profile-circle" style="background-image:url('http://www.menshairstylestoday.com/wp-content/uploads/2016/09/Bald-Bearded-Men.jpg'); background-size: contain; background-repeat: no-repeat;"></div>
                 <blockquote>
-                <p>Hi I'm a 27yr old male currently experiencing a lot of upper left abdominal pain just under ribs.i tested positive for hpylori in late march I took the course of still the pain is still frightened to death of it being something serious like stomach cancer or another</p>
+                <p>Hi I'm a 27yr old male currently experiencing a lot of upper left abdominal pain just under ribs.I tested positive for hpylori in late march I took the course of antibiotics , but the pain is still there! I am frightened to death of it being something serious like stomach cancer or another</p>
               </blockquote>
             </div>
                     <div class="item">
                         <div class="profile-circle" style="background-image:url('https://randomuser.me/api/portraits/women/65.jpg'); background-size: contain; background-repeat: no-repeat;"></div>
                 <blockquote>
-                <p>Hi! I'm new here. Been very depress lately because I don't know what's going on with me. Since February I have bouts of diarrhea and persistent stomach pains. The pain is mostly at the lower abdomen and lower left (sometimes it radiates in the lower right). The pain/discomfort never goes away, it's always there. Every morning when i wake up I will have a stomach cramps and the urgent need to have a bowel movement. My stools are always loose, sometimes i can see mucus in it. I dont lose weight and my appetite is okay. I already had the ff test whole abdomen ultrasound, trans-v, complete blood count, urinalysis, and stool test. But all came back normal. I am dreading to have colonoscopy cause i'm so afraid what the doctor will find. Does anyone experience this? By the way i'm female and 31 yrs old. Thank you!!!</p>
+                <p>Hi! I'm new here. Been very depress lately because I don't know what's going on with me. Since February, I have bouts of diarrhea and persistent stomach pains. The pain is mostly at the lower abdomen and lower left (sometimes it radiates in the lower right). The pain/discomfort never goes away, it's always there. Every morning when i wake up I will have a stomach cramps and the urgent need to have a bowel movement. My stools are always loose, sometimes I can see mucus in it. I don't lose weight and my appetite is okay. I already had the ff test whole abdomen ultrasound, trans-v, complete blood count, urinalysis, and stool test. But all came back normal. I am dreading to have colonoscopy cause i'm so afraid what the doctor will find. Does anyone experience this? By the way I'm female and 31 yrs old. Thank you!!!</p>
               </blockquote>
             </div>
                     <div class="item">
                         <div class="profile-circle" style="background-image:url('https://s-media-cache-ak0.pinimg.com/736x/74/ea/7d/74ea7ddcf529fabe35bf18dd309e6cfe.jpg'); background-size: contain; background-repeat: no-repeat;"></div>
                 <blockquote>
-                <p> I am being treated by gastro Doctor for ulcers and colon issues. Initially the prescribed meds alleviated stomach pains. I am still taking medicines recently after several stressful events, I am having intense upper stomach pain which feels like constrict through the chest and back what can I do to eliminated the pain once it starts I already use most of the coping,, control techniques. I am reaching a braking point</p>
+                <p> I am being treated by gastro Doctor for ulcers and colon issues. Initially the prescribed meds alleviated stomach pains. I am still taking medicines recently after several stressful events, I am having intense upper stomach pain which feels like constriction through the chest and back. What can I do to eliminated the pain once it starts I already use most of the coping control techniques. I am reaching a braking point</p>
               </blockquote>
             </div>
           </div>

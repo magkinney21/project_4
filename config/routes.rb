@@ -16,12 +16,17 @@ end
 resources :posts do
     resources :comments
   end
-  root to: "posts#index"
+
+authenticated do
+  root :to => "posts#index"
+end
+  # root to: "posts#index"
+
+root :to => 'static_pages#landing_page'
 
  get 'about' => 'static_pages#about'
- get 'landing_page' => 'static_pages#landing_page'
  end
 
-# change root later
+
 # get '/recipes' => 'recipes#index'
 # end
