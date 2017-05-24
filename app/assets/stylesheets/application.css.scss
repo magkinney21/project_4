@@ -69,17 +69,20 @@ h1, h2, h3, h4, h5, h6 {
 }
   .navbar-nav > li > a {
     color: #fff;
-  }
+
 
   .navbar-link {
     color: #fff;
+  }
+  .navbar-link:hover{
+    color: #0a8fd5;
   }
 
   .navbar-brand {
     color: #fff;
     letter-spacing: 1.1px;
   }
-
+}
 
 /* Links styles */
 
@@ -188,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
 #logo {
   letter-spacing: 11px;
   text-align: center;
-  margin-right: inherit;
+  /*margin-right: inherit;*/
   color: #0a8fd5;
   font-size: 20px;
 }
