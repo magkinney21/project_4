@@ -95,7 +95,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Post styles */
-
 .post {
   box-sizing: border-box;
   background-color: #1C263C;;
@@ -105,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1.4em 1.4em;
   height: 150px;
   border-bottom: 4px solid #0a8fd5;
-}
+
   .post-title {
     font-size: 1.5em;
     font-family: 'Muli', sans-serif;
@@ -119,6 +118,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
   }
 
+}
 
 .post:nth-child(4n) {
   clear: left;
@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-family: 'Muli', sans-serif;
   font-weight: 300;
-}
+
   h2 {
     margin-top: 0;
   }
@@ -153,6 +153,10 @@ h1, h2, h3, h4, h5, h6 {
   .reply-to-post {
     margin-top: 50px;
   }
+
+}
+
+
 
 
 
