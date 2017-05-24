@@ -80,8 +80,6 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1.1px;
   }
 
-}
-
 
 /* Links styles */
 
@@ -120,7 +118,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
   }
 
-}
 
 .post:nth-child(4n) {
   clear: left;
@@ -156,7 +153,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 50px;
   }
 
-}
 
 
 /* Comment styles */
@@ -194,6 +190,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin-right: inherit;
   color: #0a8fd5;
+  font-size: 20px;
 }
 #copy{
   font-size: 10px;
