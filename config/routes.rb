@@ -19,6 +19,7 @@ resources :posts do
   root to: "posts#index"
 
  get 'about' => 'static_pages#about'
+ get 'landing_page' => 'static_pages#landing_page'
  end
 
 # change root later

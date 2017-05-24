@@ -19,11 +19,11 @@
       </div>
       <ul class="nav navbar-nav">
         <li><%= link_to "Sign-Up", new_user_registration_path %></li>
+        <li><%= link_to "About", about_path %></li>
         <% if user_signed_in? %>
         <li><%= link_to "Sign Out", destroy_user_session_path, method: "delete" %></li>
         <li><%= link_to "Recipes", recipes_path %></li>
         <li><%= link_to "Profile", user_path(current_user.id) %></li>
-        <li><%= link_to "About", about_path %></li>
       <% else %>
       <li><%= link_to "Log-In", new_user_session_path %></li>
       <% end %>
@@ -82,7 +82,7 @@
                 <p>Subscribe with email to get monthly updates</p>
                 <p>
                     <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Search for...">
+                      <input type="text" class="form-control" placeholder="Email Address...">
                       <span class="input-group-btn">
                         <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
                       </span>
