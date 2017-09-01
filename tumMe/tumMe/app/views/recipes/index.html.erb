@@ -1,0 +1,38 @@
+<h1 class="recipe">Recipes</h1>
+<p> Search by recipe,ingreditent, food allergies, etc... </p>
+ <%= form_tag('/recipes', method: :get) do |f| %>
+  <%= text_field_tag 'query' %>
+  <%= button_tag(type: "submit", class: "btn btn-default") do %>
+  <i class="icon ion-search"></i>
+<% end %>
+<% end %>
+
+<br>
+
+<div class="pre-scrollable">
+<div class="container flex-container">
+<% @recipes.each do |recipe| %>
+<div class="card hovercard">
+   <img src= "<%= recipe['recipe']['image'] %>" alt=""/>
+   <div class="info">
+      <div class="title">
+      <%= recipe['recipe']['label'] %>
+      </div>
+      <div class="desc"><%= recipe['recipe']['dietLabels'] %></div>
+        <div class="desc"><%= recipe['recipe']['healthLabels'] %></div>
+         <% recipe['recipe']['ingredients'].each do |ingredient| %>
+        <div class="desc"><%= "#{ingredient['text']}" %></div>
+      <% end %>
+    </div>
+   <div class="bottom">
+     <% if current_user %>
+       <%= link_to '<i class="icon ion-ios-heart"></i>'.html_safe,   favorite_recipe_path(:id, type: "favorite"), method: :put %>
+       <%= link_to '<i class="icon ion-ios-heart-outline"></i>'.html_safe, favorite_recipe_path(:id, type: "unfavorite"), method: :put %>
+    <% end %>
+    <!--   <a class="icon ion-ios-heart"></a> -->
+     </div>
+</div>
+<% end %>
+</div>
+</div>
+

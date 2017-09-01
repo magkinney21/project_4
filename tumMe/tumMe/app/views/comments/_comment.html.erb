@@ -1,0 +1,22 @@
+<div class="comment">
+ <img class="img-responsive img-circle hidden-xs" src="<%= comment.user.img_url %>" alt="" style = "width: 50px; height: 50px">
+<p class="comment-content"><%= comment.content %></p>
+<i class="comment-posted-by">Posted by :  <%= comment.user.email.capitalize %> <%= time_ago_in_words(comment.created_at) %> ago </i>
+
+<div class="links">
+<% if user_signed_in? %>
+<% if comment.user_id == current_user.id %>
+    <%= link_to "Edit", edit_post_comment_path(comment.post, comment) %>
+    <%= link_to "Delete", post_comment_path(comment.post, comment), method: :delete,
+          data: {
+         :'sweet-alert-confirm' => "Are you sure you want to delete this comment?",
+         :'confirm-button-text' => 'Delete',
+         :'cancel-button-text' => 'Cancel',
+         :'confirm-button-color' => '#D9534F',
+         :'sweet-alert-type' => 'error',
+         text: 'This cannot be undone.'
+         } %>
+  <% end %>
+<% end %>
+</div>
+</div>

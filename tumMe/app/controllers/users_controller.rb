@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   def index
-    @user = User.where(disease: params[:disease])
+    @users =User.all
+    # @users = User.where(disease: params[:disease])
   end
 def show
     @user = User.find(params[:id])

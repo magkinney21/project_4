@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #1C263C;
 
 
-  .navbar-nav > li > a {
+   .navbar-nav > li > a {
     color: #fff;
   }
 
@@ -79,7 +79,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     letter-spacing: 1.1px;
   }
-
 }
 
 
@@ -96,7 +95,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Post styles */
-
 .post {
   box-sizing: border-box;
   background-color: #1C263C;;
@@ -159,6 +157,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
+
+
 /* Comment styles */
 
 .comment {
@@ -184,16 +185,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 /*footer style*/
-.logo {
+.logo, .logoFooter {
   height: 100px;
   width: 100px;
+}
+.logoFooter{
   margin-left: 35px;
 }
 #logo {
   letter-spacing: 11px;
-  text-align: center;
-  margin-right: 10px;
+  text-align: left;
   color: #0a8fd5;
+  font-size: 20px;
+  margin-left: 30px;
 }
 #copy{
   font-size: 10px;
@@ -258,7 +262,7 @@ input.gsc-search-button-v2 {
     min-width: 13px !important;
     padding: 5px 26px !important;
     width: 68px !important;
-
+}
 /*about page style*/
 .name, .media-heading, .modal-title{
    color:#1C263C;
