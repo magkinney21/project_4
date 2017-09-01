@@ -1,0 +1,6 @@
+<h1 class="name">TumMe's Current User</h1>
+<br>
+<% @users.each do |user| %>
+<img class="img-responsive img-circle hidden-xs" src="<%= user.img_url %>" alt="" style = "width: 50px; height: 50px; margin-bottom:10px;">
+<p>Disease Type: <%= user.disease %><br>Email: <%= user.email%></p><hr>
+<% end %>

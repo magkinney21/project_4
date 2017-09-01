@@ -1,0 +1,266 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require sweet-alert
+ *= require bootsy
+ *= require_tree .
+ */
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display|Muli:300,400);
+@import 'ionicons';
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+body {
+  background-color: #D1E6E7;
+  font-family: 'Playfair Display', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+  color:#fff;
+}
+
+.btn-custom {
+  background-color: #fff;
+  color: #0a8fd5;
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+  border-radius: 8px;
+  padding: 10px 20px;
+  &:hover {
+    color: #0a8fd5;
+    transition: 0.5s;
+    background-color: #fff;
+    text-decoration: none;
+  }
+}
+
+.btn:hover {
+  transition: 0.5s;
+  color: #0a8fd5;
+  background-color: #fff;
+}
+
+
+/* Navbar styles */
+
+.navbar {
+  font-family: 'Muli', sans-serif;
+}
+
+.navbar-default {
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #1C263C;
+
+
+  .navbar-nav > li > a {
+    color: #fff;
+  }
+
+  .navbar-link {
+    color: #fff;
+  }
+
+  .navbar-brand {
+    color: #fff;
+    letter-spacing: 1.1px;
+  }
+
+}
+
+
+/* Links styles */
+
+.links {
+  margin-top: 20px;
+  .btn-default {
+    color: #0a8fd5;
+  }
+}
+.favlink{
+  color: white;
+}
+
+/* Post styles */
+
+.post {
+  box-sizing: border-box;
+  background-color: #1C263C;;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 1.4em 1.4em;
+  height: 150px;
+  border-bottom: 4px solid #0a8fd5;
+
+  .post-title {
+    font-size: 1.5em;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+    color: white;
+    margin-bottom: 25px;
+  }
+
+  .btn-custom {
+    margin-top: 20px;
+  }
+
+}
+
+.post:nth-child(4n) {
+  clear: left;
+}
+
+/* Post show-page styles */
+
+.post-show {
+  box-sizing: border-box;
+  background-color: #1C263C;
+  padding: 2.0em 1.5em;
+  border-bottom: 4px solid #0a8fd5;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .post-content {
+    font-size: 1.1em;
+    line-height: 1.75;
+    margin-bottom: 50px;
+  }
+
+  .post-posted-by {
+    color: #eee;
+    font-size: 0.9em;
+  }
+
+  .reply-to-post {
+    margin-top: 50px;
+  }
+
+}
+
+
+/* Comment styles */
+
+.comment {
+  border-bottom: 1px solid #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  .comment-content {
+    font-size: 1.25em;
+  }
+
+  .comment-posted-by {
+    color: #eee;
+    font-size: 0.8em;
+  }
+
+  .links {
+    margin-top: 15px;
+    a {
+      color: #0a8fd5;
+      margin-right: 15px;
+    }
+  }
+}
+/*footer style*/
+.logo {
+  height: 100px;
+  width: 100px;
+  margin-left: 35px;
+}
+#logo {
+  letter-spacing: 11px;
+  text-align: center;
+  margin-right: inherit;
+  color: #0a8fd5;
+}
+#copy{
+  font-size: 10px;
+}
+.footer-bs {
+    background-color: #1C263C;
+  padding: 60px 40px;
+  color: rgba(255,255,255,1.00);
+  margin-bottom: -20px;
+  margin-top:10%;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 6px;
+}
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { padding:10px 25px; }
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-color: transparent; }
+.footer-bs .footer-brand h2 { margin:0px 0px 10px; }
+.footer-bs .footer-brand p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+.footer-bs .footer-nav ul.pages { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.pages li { padding:5px 0px;}
+.footer-bs .footer-nav ul.pages a { color:rgba(255,255,255,1.00); font-weight:bold; text-transform:uppercase; }
+.footer-bs .footer-nav ul.pages a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+.footer-bs .footer-nav h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom:10px;
+}
+
+.footer-bs .footer-nav ul.list { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.list li { padding:5px 0px;}
+.footer-bs .footer-nav ul.list a { color:rgba(255,255,255,0.80); }
+.footer-bs .footer-nav ul.list a:hover { color:rgba(255,255,255,0.60); text-decoration:none; }
+
+.footer-bs .footer-social ul { list-style:none; padding:0px; }
+.footer-bs .footer-social h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.footer-bs .footer-social li { padding:5px 4px;}
+.footer-bs .footer-social a { color:rgba(255,255,255,1.00);}
+.footer-bs .footer-social a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+
+.footer-bs .footer-ns h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom:10px;
+}
+.footer-bs .footer-ns p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+@media (min-width: 768px) {
+  .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
+}
+
+.cse .gsc-search-button input.gsc-search-button-v2,
+input.gsc-search-button-v2 {
+    height: 26px !important;
+    margin-top: 0 !important;
+    min-width: 13px !important;
+    padding: 5px 26px !important;
+    width: 68px !important;
+}
+/*about page style*/
+.name, .media-heading, .modal-title{
+   color:#1C263C;
+
+}

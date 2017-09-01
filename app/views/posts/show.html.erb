@@ -1,0 +1,29 @@
+<div class="col-md-8 col-md-offset-2">
+    <div class="post-show">
+      <h1 class="post-title"><%= @post.title %></h1>
+      <p class="post-posted-by">Posted by <%= @post.user.email %> <%= time_ago_in_words(@post.created_at) %> ago </p>
+      <p class="post-content"><%= @post.content %></p>
+
+      <h3 class="comment-section-header">Comments:</h3>
+      <%= render @post.comments %>
+      <h3 class="reply-to-post">Reply to Post:</h3>
+      <%= render 'comments/form' %>
+
+<div class="links btn-group">
+<%= link_to "Back", posts_path, class: "btn btn-default" %>
+<% if @post.user_id == current_user.id %>
+  <%= link_to "Edit", edit_post_path(@post), class: "btn btn-default" %>
+  <%= link_to "Delete", post_path(@post), method: :delete,
+    data: {
+         :'sweet-alert-confirm' => "Are you sure you want to delete this post?",
+         :'confirm-button-text' => 'Delete',
+         :'cancel-button-text' => 'Cancel',
+         :'confirm-button-color' => '#D9534F',
+         :'sweet-alert-type' => 'error',
+         text: 'This cannot be undone.'
+         }, class: "btn btn-default" %>
+
+        <% end %>
+        </div>
+    </div>
+</div>

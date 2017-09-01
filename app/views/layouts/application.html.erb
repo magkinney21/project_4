@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TumMe</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+
+<!-- nav bar
+ -->  <div class ="navbar navbar-default">
+    <div class ="container">
+      <div class="header">
+      <%= link_to "TumMe", root_path, class: "navbar-brand" %>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><%= link_to "Sign-Up", new_user_registration_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <% if user_signed_in? %>
+        <li><%= link_to "Sign Out", destroy_user_session_path, method: "delete" %></li>
+        <li><%= link_to "Recipes", recipes_path %></li>
+        <li><%= link_to "Profile", user_path(current_user.id) %></li>
+      <% else %>
+      <li><%= link_to "Log-In", new_user_session_path %></li>
+      <% end %>
+      </ul>
+      <% if user_signed_in? %>
+      <p><%= link_to "New Post", new_post_path, class: "navbar-right navbar-text navbar-link" %></p>
+      <% end %>
+
+    </div>
+    </div>
+     <p class="notice"><%= notice %></p>
+     <p class="alert"><%= alert %></p>
+    <div class="container">
+
+      <%= yield %>
+    </div>
+
+    <footer class="footer-bs">
+        <div class="row">
+          <div class="col-md-3 footer-brand animated fadeInLeft">
+              <h2><img src="<%= asset_path('logo.png')%>" class="logo"></h2>
+                <h3 id ="logo">TumMe</h3>
+                <p id="copy">© 2017 MK & JIC INC, All rights reserved></p>
+            </div>
+          <div class="col-md-4 footer-nav animated fadeInUp">
+              <h4>Helpful Links —</h4>
+              <div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="https://www.healthgrades.com/">Find Doctors</a></li>
+                        <li><a href="https://radiant-beyond-88759.herokuapp.com/">Dining Out</a></li>
+                        <li><a href="https://penzu.com/food-diary">Food Journal</a></li>
+                        <li><a href="http://allergyfreemenuplanners.com/">Meal Prep</a></li>
+                        <li><a href="http://staywell.com/">Stay Well</a></li>
+                    </ul>
+                </div>
+              <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                          <li><a href="#">Contacts</a></li>
+                          <li><a href="#">Terms & Condition</a></li>
+                          <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+          <div class="col-md-2 footer-social animated fadeInDown">
+              <h4>Follow Us</h4>
+              <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">GitHub</a></li>
+                </ul>
+            </div>
+          <div class="col-md-3 footer-ns animated fadeInRight">
+              <h4>Newsletter</h4>
+                <p>Subscribe with email to get monthly updates</p>
+                <p>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Email...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                 </p>
+            </div>
+        </div>
+    </footer>
+</div>
+  </body>
+</html>

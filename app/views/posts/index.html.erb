@@ -1,0 +1,38 @@
+<h1 class="postIndexShow">Support And Advice</h1>
+  <div class="search">
+    <script>
+      (function() {
+       var cx = '001473435792807546317:kdvc37rz0vy';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+   <gcse:search></gcse:search>
+</div>
+
+
+<br>
+<% @posts.each do |post| %>
+  <div class="col-md-4">
+    <div class="post">
+      <h2 class="post-title"><%= post.title %></h2>
+      <%= link_to "View Post", post_path(post), class: "btn-custom "%>
+      <br>
+      <br>
+      <%# favorited_post = post.favorited(current_user)%>
+      <%# if favorited_post.present? %>
+      <%#= link_to '<i class="ion-ios-heart-outline"></i>'.html_safe, user_favorite_post_path(user_id: current_user.id, id: favorited_post.id), method: :delete %>
+    <%# else %>
+      <%#= link_to '<i class="icon ion-ios-heart"></i>'.html_safe, user_favorite_posts_path(user_id: current_user.id, id: favorited_post, post_id: id ), method: :post  %>
+   <%# end %>
+     </div>
+  </div>
+  <% end %>
+</div>
+</div>
+
+
