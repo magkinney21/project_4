@@ -8,8 +8,12 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
+<<<<<<< HEAD
 # gem 'sqlite3'
 gem 'pg'
+=======
+gem 'sqlite3',
+>>>>>>> 36696ed35808e3ac6e4de43dcb2d37940e9409f2
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'simple_form', '~> 3.4'
